@@ -1,0 +1,201 @@
+@media all and (max-width:1208px)
+{
+
+     /*styles del header para dispositivos moviles*/
+     header
+     {
+          height: 44px;
+          display: flex; 
+          align-items: center;
+          margin-bottom: 8%;
+          justify-content: flex-end;
+          margin-top: 1%;
+          position: relative;
+
+          label
+          {
+              top: 15px;
+              margin-right: 4%;
+          }
+          .logo
+          {
+               position: absolute;
+               top: 10px;
+               left: 5%;
+          }
+
+          
+          .navbar-list
+          {    
+               width: 100%;
+               display: flex;
+               align-items: center;
+
+               .lista-menu
+               {
+                    list-style: none;
+                    position: absolute;
+                    display: none;
+               }
+
+               ul li a 
+               {
+                    width: 100%;
+                    display: block;
+                    color: #fff;
+               }
+          }
+
+          input[type="checkbox"]
+          {
+               display: none;
+          }
+      
+          input+label+.navbar-list 
+          {
+               display: none;
+          }
+
+          input:checked+label+.navbar-list
+          {
+               margin: 0;
+               display: block;
+               position: absolute;
+               width: 100%;
+               height: 15em;
+               top: 4em;
+               background-color: #0000EC;
+               display: flex;
+               align-items: center;
+
+               ul 
+               {
+                    list-style: none;
+                    text-decoration: none;
+                    display: block;
+          
+                    li 
+                    {
+                         margin: 1.5em;
+                         a 
+                         {
+                             font-family: 'IBM Plex Mono',monospace;
+                             font-size: 16px;
+                             color: #FFFFFF;
+                             letter-spacing: 0;
+                             line-height: 28px;
+                             text-decoration: none;
+                             list-style: none;
+                         }    
+                         
+                    } 
+               }              
+
+          }
+
+          #equis
+          {
+               display: none;
+          }
+
+          input:checked+label #equis 
+          {
+               display: block;
+          }
+
+          input:checked+label #menuh
+          {
+               display:none;
+          }
+     }
+}
+ 
+@media all and (min-width:1208px)
+{
+
+     header
+     {
+          margin-bottom: 8%;
+          height: auto;
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 1%;
+          position: relative;
+
+          /*styles del header para pantallas más grandes*/
+          #equis
+          {
+               display:none;
+          }
+  
+          #menuh,input[type="checkbox"]
+          {
+               display: none;
+          }
+
+          .logo
+          {
+               position: absolute;
+               top: 20px;
+               left: 5%;
+          }
+
+          .navbar-list
+          {
+               padding-right: 5%;
+
+               .lista-menu
+               {
+                    list-style: none;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-inline-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 40px;
+
+                    li
+                    {
+                         padding: 15px;
+                         text-decoration: none;
+                         line-height: 24px;
+                         a
+                         {
+                              padding: 15px;
+                              text-decoration: none;
+                              list-style: none;
+                              width: auto;
+                              height: 28px;
+                              font-family: 'IBM Plex Mono', monospace;
+                              font-size: 16px;
+                              color: #060A24;
+                              letter-spacing: 0;
+                              line-height: 28px;
+                         }
+
+                         a:hover
+                         {
+                              font-family: 'IBMPlexMono', monospace;
+                              font-size: 16px;
+                              color: #00F3BB;
+                              letter-spacing: 0;
+                              line-height: 28px;
+                              text-decoration: line-through;
+                         }
+
+                         a:active
+                         {
+                              font-family: 'IBMPlexMono', monospace;
+                              font-size: 16px;
+                              color: rgba(6,10,36,0.56);
+                              letter-spacing: 0;
+                              line-height: 28px;
+                              text-decoration: line-through;
+                         }     
+                    }
+               } 
+          }
+     }
+}

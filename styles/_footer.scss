@@ -1,0 +1,123 @@
+/*Break point para dispositivos moviles*/
+@media all and (max-width:1208px)
+{
+
+     .footer
+     {
+          width: 100%;
+          height: 9em;
+
+          .container-footer
+          {
+               background-color: #fff;
+               width: 100%;
+               height: 9em;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+
+               h3
+               {
+                    font-family: 'IBM Plex Mono' , monospace;
+                    font-size: 14px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    font-weight: normal;
+                    padding-top: 3em;
+                    padding-left: 2.9%;
+                    align-content: center;
+                    justify-content: center;
+                    display: flex;
+               }
+
+
+               .lista-footer
+               {
+                    margin-bottom: 1rem;
+
+                    ul
+                    {
+                         display: flex;
+                         list-style: none;
+                         justify-content: center;
+                         padding: 14px;
+                         margin-right: 14px;
+
+                         li
+                         {
+                               justify-content: center;
+                               margin-left: 30px;
+
+                         }
+
+                         i
+                         {
+                              color: black;
+                         }
+                    }    
+               
+               }
+          }
+
+
+     }
+
+}
+
+/*Break point para dispositivos de escritorio*/
+@media all and (min-width:1208px)
+{
+     .footer
+     {
+          width: 100%;
+          
+          .container-footer
+          {
+               background-color: #fff;
+               width: 100%;
+               height: 170px;
+               display: flex;
+               justify-content: space-between;
+     
+               h3
+               {
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 16px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                    font-weight: normal;
+                    padding-top: 4%;
+                    padding-left: 6.9%;
+     
+               }
+     
+               .lista-footer
+               {
+                    padding: 4% 9% 0 0 ;
+     
+                    ul
+                    {
+                         display: flex;
+                         list-style: none;
+                         justify-content: space-around;
+                         padding-top: 7px;
+     
+                         li
+                         {
+                              justify-content: space-between;
+                              margin-left: 30px;
+     
+                              i
+                              {
+                                   color: black;
+                              }
+                         }
+                    }
+               }
+     
+          }
+     }
+
+}

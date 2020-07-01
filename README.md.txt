@@ -1,0 +1,2 @@
+Este repositorio contiene los fuentes qué se desarrollaron en el primer proyecto del curso de developer full stack de ACAMICA
+Trabajo realizado con mucha pasión y dedicación por aprender nuevas tecnologías y para mi futuro como desarrollador
